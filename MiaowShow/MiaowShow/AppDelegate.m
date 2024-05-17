@@ -23,10 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    self.window.rootViewController = [[LoginViewController alloc] init];
-    
     [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[LoginViewController alloc] init];
     
     [self checkNetworkStates];
 

@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, NetworkStates) {
     NetworkStates2G, // 2G
     NetworkStates3G, // 3G
     NetworkStates4G, // 4G
+    NetworkStates5G,
     NetworkStatesWIFI // WIFI
 };
 
@@ -22,3 +23,5 @@ typedef NS_ENUM(NSUInteger, NetworkStates) {
 // 判断网络类型
 + (NetworkStates)getNetworkStates;
 @end
+
+

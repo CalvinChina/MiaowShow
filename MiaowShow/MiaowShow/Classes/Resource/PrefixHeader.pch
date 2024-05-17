@@ -21,7 +21,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <IJKMediaFrameworkWithSSL/IJKMediaFrameworkWithSSL.h>
 #import <Masonry.h>
 #import "UIView+SLExtension.h"
 #import "UIViewController+SLHUD.h"

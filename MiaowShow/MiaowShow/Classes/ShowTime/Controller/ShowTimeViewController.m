@@ -111,7 +111,7 @@
     if (sender.selected) { // 开始直播
         LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
         // 如果是跟我blog教程搭建的本地服务器, 记得填写你电脑的IP地址
-        stream.url = @"rtmp://192.168.1.102:1935/rtmplive/room";
+        stream.url = @"rtmp://10.2.6.150:1935/rtmplive/room";
         self.rtmpUrl = stream.url;
         [self.session startLive:stream];
     }else{ // 结束直播

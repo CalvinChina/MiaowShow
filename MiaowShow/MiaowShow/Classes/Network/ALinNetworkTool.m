@@ -7,6 +7,9 @@
 //
 
 #import "ALinNetworkTool.h"
+#import "Reachability.h"
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 
 @implementation ALinNetworkTool
 static ALinNetworkTool *_manager;
@@ -22,41 +25,42 @@ static ALinNetworkTool *_manager;
     return _manager;
 }
 
-// 判断网络类型
-+ (NetworkStates)getNetworkStates
-{
-    NSArray *subviews = [[[[UIApplication sharedApplication] valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"] subviews];
-    // 保存网络状态
+
++ (NetworkStates)getNetworkStates {
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus status = [reachability currentReachabilityStatus];
+    
     NetworkStates states = NetworkStatesNone;
-    for (id child in subviews) {
-        if ([child isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
-            //获取到状态栏码
-            int networkType = [[child valueForKeyPath:@"dataNetworkType"] intValue];
-            switch (networkType) {
-                case 0:
-                    states = NetworkStatesNone;
-                    //无网模式
-                    break;
-                case 1:
-                    states = NetworkStates2G;
-                    break;
-                case 2:
-                    states = NetworkStates3G;
-                    break;
-                case 3:
-                    states = NetworkStates4G;
-                    break;
-                case 5:
-                {
-                    states = NetworkStatesWIFI;
-                }
-                    break;
-                default:
-                    break;
-            }
+    
+    if (status == NotReachable) {
+        states = NetworkStatesNone;
+    } else if (status == ReachableViaWiFi) {
+        states = NetworkStatesWIFI;
+    } else if (status == ReachableViaWWAN) {
+        CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+        NSString *currentRadioAccessTechnology = networkInfo.currentRadioAccessTechnology;
+        
+        if ([currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyGPRS] ||
+            [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyEdge]) {
+            states = NetworkStates2G;
+        } else if ([currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyWCDMA] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyHSDPA] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyHSUPA] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyCDMA1x] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyCDMAEVDORev0] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyCDMAEVDORevA] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyCDMAEVDORevB] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyeHRPD]) {
+            states = NetworkStates3G;
+        } else if ([currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyLTE]) {
+            states = NetworkStates4G;
+        } else if (@available(iOS 14.1, *) && [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyNRNSA] ||
+                   [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyNR]) {
+            states = NetworkStates5G;
         }
     }
-    //根据状态选择
+    
     return states;
 }
+
 @end
