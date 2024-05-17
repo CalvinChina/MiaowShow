@@ -7,6 +7,7 @@ iOS视频直播项目
 
 ## 关于`IJKMediaFrameworkWithSSL/IJKMediaFrameworkWithSSL.h`找不到的问题!!!
 请看我的<a href="http://www.jianshu.com/p/b8db6c142aad">简书blog:iOS视频直播初窥:高仿Blog<喵播APP></a>, 里面有打包教程和下载地址!!!
+[或者查看 <a href="http://www.jianshu.com/p/b8db6c142aad"> ](https://juejin.cn/post/6844904056062738440)
 
 ## 项目blog讲解地址
 <a href="http://www.jianshu.com/p/b8db6c142aad">简书blog:iOS视频直播初窥:高仿<喵播APP></a>
