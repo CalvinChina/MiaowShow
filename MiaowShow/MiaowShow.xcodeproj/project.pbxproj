@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4EC0C8462BF617C500278468 /* IJKMediaFrameworkWithSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C075C2BF45D900099A745 /* IJKMediaFrameworkWithSSL.framework */; };
 		4EC0C8472BF617C500278468 /* IJKMediaFrameworkWithSSL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C075C2BF45D900099A745 /* IJKMediaFrameworkWithSSL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		70D249A48322E2E32E1F0507 /* libPods-MiaowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372155D4C47F383711AE057 /* libPods-MiaowShow.a */; };
+		70FB65F32E92F0596F0B0624 /* Pods_MiaowShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE821809A2BDF0F7C8DE1BA /* Pods_MiaowShow.framework */; };
 		BB219BC61D22D06200AF44C1 /* ALinUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB219BC51D22D06200AF44C1 /* ALinUserView.m */; };
 		BB219BC81D22D06C00AF44C1 /* ALinUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB219BC71D22D06C00AF44C1 /* ALinUserView.xib */; };
 		BB219BCB1D22E4C500AF44C1 /* NSObject+ALinHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB219BCA1D22E4C500AF44C1 /* NSObject+ALinHUD.m */; };
@@ -66,7 +66,6 @@
 		C75783621D1008B500CD856B /* UIViewController+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C75783611D1008B500CD856B /* UIViewController+SLExtension.m */; };
 		C769A8AC1D29FCD6001EFB5C /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C769A8AB1D29FCD6001EFB5C /* ProfileController.m */; };
 		C769A8AE1D2A029C001EFB5C /* ShowTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C769A8AD1D2A029C001EFB5C /* ShowTimeViewController.storyboard */; };
-		C769A8B21D2A09FC001EFB5C /* ALinGPUBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C769A8B11D2A09FC001EFB5C /* ALinGPUBeautifyFilter.m */; };
 		C78DB1201D13AC900060D941 /* ALinCatEarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C78DB11F1D13AC900060D941 /* ALinCatEarView.m */; };
 		C78DB1221D13ACF60060D941 /* ALinCatEarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78DB1211D13ACF60060D941 /* ALinCatEarView.xib */; };
 		C7940FA11D1154F90095415A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C7940FA01D1154F90095415A /* Reachability.m */; };
@@ -106,9 +105,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CE821809A2BDF0F7C8DE1BA /* Pods_MiaowShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaowShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		343A1FB4B109EE1106C1EA18 /* Pods-MiaowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaowShow/Pods-MiaowShow.release.xcconfig"; sourceTree = "<group>"; };
 		4E0C075C2BF45D900099A745 /* IJKMediaFrameworkWithSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFrameworkWithSSL.framework; sourceTree = "<group>"; };
-		6372155D4C47F383711AE057 /* libPods-MiaowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiaowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB219BC41D22D06200AF44C1 /* ALinUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinUserView.h; sourceTree = "<group>"; };
 		BB219BC51D22D06200AF44C1 /* ALinUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinUserView.m; sourceTree = "<group>"; };
 		BB219BC71D22D06C00AF44C1 /* ALinUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALinUserView.xib; sourceTree = "<group>"; };
@@ -212,8 +211,6 @@
 		C769A8AA1D29FCD6001EFB5C /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
 		C769A8AB1D29FCD6001EFB5C /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
 		C769A8AD1D2A029C001EFB5C /* ShowTimeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowTimeViewController.storyboard; sourceTree = "<group>"; };
-		C769A8B01D2A09FC001EFB5C /* ALinGPUBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinGPUBeautifyFilter.h; sourceTree = "<group>"; };
-		C769A8B11D2A09FC001EFB5C /* ALinGPUBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinGPUBeautifyFilter.m; sourceTree = "<group>"; };
 		C78DB11E1D13AC900060D941 /* ALinCatEarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinCatEarView.h; sourceTree = "<group>"; };
 		C78DB11F1D13AC900060D941 /* ALinCatEarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinCatEarView.m; sourceTree = "<group>"; };
 		C78DB1211D13ACF60060D941 /* ALinCatEarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALinCatEarView.xib; sourceTree = "<group>"; };
@@ -232,7 +229,7 @@
 			files = (
 				4EC0C8462BF617C500278468 /* IJKMediaFrameworkWithSSL.framework in Frameworks */,
 				BBE540F61D0F274400BF723E /* libz.tbd in Frameworks */,
-				70D249A48322E2E32E1F0507 /* libPods-MiaowShow.a in Frameworks */,
+				70FB65F32E92F0596F0B0624 /* Pods_MiaowShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +264,7 @@
 			children = (
 				4E0C075C2BF45D900099A745 /* IJKMediaFrameworkWithSSL.framework */,
 				BBE540F51D0F274400BF723E /* libz.tbd */,
-				6372155D4C47F383711AE057 /* libPods-MiaowShow.a */,
+				0CE821809A2BDF0F7C8DE1BA /* Pods_MiaowShow.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -529,7 +526,6 @@
 			isa = PBXGroup;
 			children = (
 				BBDA0D7F1D2AB3CF00B49588 /* H264Encoder */,
-				C769A8AF1D2A09D3001EFB5C /* Filter */,
 				C72A3F3B1D0F97E3002FC3F5 /* Controller */,
 			);
 			path = ShowTime;
@@ -782,15 +778,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C769A8AF1D2A09D3001EFB5C /* Filter */ = {
-			isa = PBXGroup;
-			children = (
-				C769A8B01D2A09FC001EFB5C /* ALinGPUBeautifyFilter.h */,
-				C769A8B11D2A09FC001EFB5C /* ALinGPUBeautifyFilter.m */,
-			);
-			path = Filter;
-			sourceTree = "<group>";
-		};
 		C7FD57701D2BA8DA0005BA11 /* SafeObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,8 +798,8 @@
 				BBE540A91D0F261900BF723E /* Sources */,
 				BBE540AA1D0F261900BF723E /* Frameworks */,
 				BBE540AB1D0F261900BF723E /* Resources */,
-				EABFBD1F97C1CF5DA8973C92 /* [CP] Copy Pods Resources */,
 				4EC0C8482BF617C500278468 /* Embed Frameworks */,
+				5550789BBD375C8DAD2A035E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -943,6 +930,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5550789BBD375C8DAD2A035E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiaowShow/Pods-MiaowShow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BarrageRenderer/BarrageRenderer.framework",
+				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarrageRenderer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiaowShow/Pods-MiaowShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D06653B30FFF897F89744A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -959,34 +978,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EABFBD1F97C1CF5DA8973C92 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MiaowShow/Pods-MiaowShow-resources.sh",
-				"${PODS_ROOT}/LMGPUImage/framework/Resources/lookup.png",
-				"${PODS_ROOT}/LMGPUImage/framework/Resources/lookup_amatorka.png",
-				"${PODS_ROOT}/LMGPUImage/framework/Resources/lookup_miss_etikate.png",
-				"${PODS_ROOT}/LMGPUImage/framework/Resources/lookup_soft_elegance_1.png",
-				"${PODS_ROOT}/LMGPUImage/framework/Resources/lookup_soft_elegance_2.png",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiaowShow/Pods-MiaowShow-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1020,7 +1011,6 @@
 				BB87BC401D25A3D4000B084D /* ALinLiveEndView.m in Sources */,
 				BBBCA9941D119FB3009ADFCC /* ALinHomeADCell.m in Sources */,
 				BBBCA99D1D11A992009ADFCC /* XRCarouselView.m in Sources */,
-				C769A8B21D2A09FC001EFB5C /* ALinGPUBeautifyFilter.m in Sources */,
 				C72A3F491D0F9A6F002FC3F5 /* ALinNavigationController.m in Sources */,
 				BB219BCB1D22E4C500AF44C1 /* NSObject+ALinHUD.m in Sources */,
 				C75783461D0FE2E900CD856B /* ALinHotViewController.m in Sources */,
