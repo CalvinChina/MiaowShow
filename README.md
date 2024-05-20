@@ -2,7 +2,7 @@
 iOS视频直播项目
 
 ## 服务器搭建：
-mac端服务器搭建 <a href="[http://www.jianshu.com/p/b8db6c142aad](https://juejin.cn/post/7044174993856397325)"> 
+<a href="[http://www.jianshu.com/p/8ea016b2720e](https://juejin.cn/post/7044174993856397325)">mac端服务器搭建</a> 
 
 ## 更新
 7月9日: iOS视频推流已经集成
