@@ -858,7 +858,7 @@
 				TargetAttributes = {
 					BBE540AC1D0F261900BF723E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BPBCHD64GW;
+						DevelopmentTeam = 69VVQ8T946;
 					};
 					BBE540C51D0F261900BF723E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1166,7 +1166,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BPBCHD64GW;
+				DEVELOPMENT_TEAM = 69VVQ8T946;
 				DYLIB_INSTALL_NAME_BASE = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

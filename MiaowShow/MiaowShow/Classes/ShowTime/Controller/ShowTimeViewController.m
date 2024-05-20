@@ -146,14 +146,33 @@
     self.statusLabel.text = [NSString stringWithFormat:@"状态: %@\nRTMP: %@", tempStatus, self.rtmpUrl];
 }
 
-/** live debug info callback */
-- (void)liveSession:(nullable LFLiveSession *)session debugInfo:(nullable LFLiveDebug*)debugInfo{
-    
+- (void)liveSession:(nullable LFLiveSession *)session debugInfo:(nullable LFLiveDebug*)debugInfo {
+    NSLog(@"Debug Info: %@", debugInfo);
 }
 
-/** callback socket errorcode */
-- (void)liveSession:(nullable LFLiveSession*)session errorCode:(LFLiveSocketErrorCode)errorCode{
-    
+- (void)liveSession:(nullable LFLiveSession*)session errorCode:(LFLiveSocketErrorCode)errorCode {
+    NSString *errorDescription;
+    switch (errorCode) {
+        case LFLiveSocketError_PreView:
+            errorDescription = @"预览失败";
+            break;
+        case LFLiveSocketError_GetStreamInfo:
+            errorDescription = @"获取流媒体信息失败";
+            break;
+        case LFLiveSocketError_ConnectSocket:
+            errorDescription = @"连接Socket失败";
+            break;
+        case LFLiveSocketError_Verification:
+            errorDescription = @"验证服务器失败";
+            break;
+        case LFLiveSocketError_ReConnectTimeOut:
+            errorDescription = @"重新连接超时";
+            break;
+        default:
+            errorDescription = @"未知错误";
+            break;
+    }
+    NSLog(@"连接错误: %@", errorDescription);
 }
 
 @end
