@@ -24,7 +24,6 @@
 		BBBCA9981D11A186009ADFCC /* ALinTopAD.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCA9971D11A186009ADFCC /* ALinTopAD.m */; };
 		BBBCA99D1D11A992009ADFCC /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCA99B1D11A992009ADFCC /* XRCarouselView.m */; };
 		BBBCA9A51D11B486009ADFCC /* ALinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCA9A41D11B486009ADFCC /* ALinWebViewController.m */; };
-		BBDA0D821D2AB3EB00B49588 /* ALinH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDA0D811D2AB3EB00B49588 /* ALinH264Encoder.m */; };
 		BBE540B21D0F261900BF723E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE540B11D0F261900BF723E /* main.m */; };
 		BBE540B51D0F261900BF723E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE540B41D0F261900BF723E /* AppDelegate.m */; };
 		BBE540BD1D0F261900BF723E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE540BC1D0F261900BF723E /* Assets.xcassets */; };
@@ -133,8 +132,6 @@
 		BBBCA99B1D11A992009ADFCC /* XRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCarouselView.m; sourceTree = "<group>"; };
 		BBBCA9A31D11B486009ADFCC /* ALinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinWebViewController.h; sourceTree = "<group>"; };
 		BBBCA9A41D11B486009ADFCC /* ALinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinWebViewController.m; sourceTree = "<group>"; };
-		BBDA0D801D2AB3EB00B49588 /* ALinH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinH264Encoder.h; sourceTree = "<group>"; };
-		BBDA0D811D2AB3EB00B49588 /* ALinH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinH264Encoder.m; sourceTree = "<group>"; };
 		BBE540AD1D0F261900BF723E /* MiaowShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiaowShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE540B11D0F261900BF723E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBE540B31D0F261900BF723E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -328,15 +325,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		BBDA0D7F1D2AB3CF00B49588 /* H264Encoder */ = {
-			isa = PBXGroup;
-			children = (
-				BBDA0D801D2AB3EB00B49588 /* ALinH264Encoder.h */,
-				BBDA0D811D2AB3EB00B49588 /* ALinH264Encoder.m */,
-			);
-			path = H264Encoder;
-			sourceTree = "<group>";
-		};
 		BBE540A41D0F261900BF723E = {
 			isa = PBXGroup;
 			children = (
@@ -525,7 +513,6 @@
 		C72A3F3A1D0F97E3002FC3F5 /* ShowTime */ = {
 			isa = PBXGroup;
 			children = (
-				BBDA0D7F1D2AB3CF00B49588 /* H264Encoder */,
 				C72A3F3B1D0F97E3002FC3F5 /* Controller */,
 			);
 			path = ShowTime;
@@ -1004,7 +991,6 @@
 				C72A3F2D1D0F93CE002FC3F5 /* UIView+SLExtension.m in Sources */,
 				C75783121D0FB38200CD856B /* ALinNetworkTool.m in Sources */,
 				C73F72051D12564800F28090 /* ALinLiveAnchorView.m in Sources */,
-				BBDA0D821D2AB3EB00B49588 /* ALinH264Encoder.m in Sources */,
 				BB9F77371D116A85007BB373 /* ALinHotLiveCell.m in Sources */,
 				C75783281D0FE27800CD856B /* HomeViewController.m in Sources */,
 				C75783291D0FE27800CD856B /* ALinLive.m in Sources */,
