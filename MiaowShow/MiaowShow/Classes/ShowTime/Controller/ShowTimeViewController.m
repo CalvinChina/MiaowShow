@@ -112,6 +112,8 @@
         LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
         // 如果是跟我blog教程搭建的本地服务器, 记得填写你电脑的IP地址
         stream.url = @"rtmp://10.2.6.150:1935/rtmplive/room";
+        // node-media-server app1.js
+//        stream.url = @"rtmp://10.2.6.150:1935/live/stream";
         self.rtmpUrl = stream.url;
         [self.session startLive:stream];
     }else{ // 结束直播
